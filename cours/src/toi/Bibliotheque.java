@@ -55,6 +55,10 @@ public class Bibliotheque {
 		listeEtagere.add(parEtagere);
 	}
 	
+	public ArrayList<Etagere> get_listeEtagere(){
+		return listeEtagere;
+	}
+	
 	public void ajouterDocDans(Etagere parEtagere, Document parDoc){
 		Iterator iterateur = listeEtagere.iterator();
 		Etagere etagereTemp;
