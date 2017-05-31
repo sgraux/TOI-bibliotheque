@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 import javax.swing.JOptionPane;
 
-public class Etagere {
+public class Etagere implements Imprimable{
 	
 	private ArrayList<Document> listeDoc;
 	private int capacite;
@@ -46,5 +46,34 @@ public class Etagere {
 		chaine += "\n";
 		return chaine;
 	}
+	
+	public boolean rechercheParAuteur(String parAuteur) {
+		String chaine = "";
+		Iterator iterateur = listeDoc.iterator();
+		Document docTemp;
+		while(iterateur.hasNext()){
+			docTemp = ((Document)iterateur.next());
+			if(docTemp instanceof Livre && (((Livre) docTemp).getAuteur()) == parAuteur){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public String imprimer() {
+		String chaine = "";
+		Iterator iterateur = listeDoc.iterator();
+		Document docTemp;
+		while(iterateur.hasNext()){
+			docTemp = ((Document)iterateur.next());
+			if(docTemp instanceof Livre){
+				chaine += ((Livre) docTemp).imprimer();
+			}
+		}
+		return chaine;
+	}
+	
+	
 
 }

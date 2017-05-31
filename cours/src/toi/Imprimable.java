@@ -2,6 +2,6 @@ package toi;
 
 public interface Imprimable{
 	
-	public abstract String imprimer();
+	abstract String imprimer();
 
 }

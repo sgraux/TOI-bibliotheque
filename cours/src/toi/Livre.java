@@ -8,11 +8,14 @@ public class Livre extends Document implements Imprimable{
 		super(parId, parTitre);
 		auteur = parAuteur;
 	}
+	
+	public String getAuteur(){
+		return auteur;
+	}
 
 	@Override
 	public String imprimer(){
 		return "IMPRIME ---> " + toString();
-		
 	}
 
 	
