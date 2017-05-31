@@ -67,6 +67,10 @@ public class Bibliotheque {
 
 	/*
 	Ajoute un document dans une etagère precise
+	@param parEtagere
+		Etagere où ajouter le document
+	@param parDoc
+		Le document a ajouter
 	 */
 	public void ajouterDocDans(Etagere parEtagere, Document parDoc){
 		Iterator iterateur = listeEtagere.iterator();
