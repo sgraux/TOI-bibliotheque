@@ -20,6 +20,15 @@ public class Bibliotheque {
 		return false;
 	}
 	
+	public boolean rechercheAuteur(String parAuteur){
+		Iterator iterateur = listeEtagere.iterator();
+		while(iterateur.hasNext()){
+			if(((Etagere)iterateur.next()).rechercheParAuteur(parAuteur))
+				return true;
+		}
+		return false;
+	}
+	
 	public void ajouterEtagere(Etagere parEtagere){
 		listeEtagere.add(parEtagere);
 	}

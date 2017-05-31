@@ -23,20 +23,26 @@ public class TestBibliotheque {
 		Roman roman1 = new Roman(6,"don't dribble","jacques","Goncours");
 		
 		
-		/*maBibli.ajouterDocDans(etagere1, livre1);
+		maBibli.ajouterDocDans(etagere1, livre1);
 		maBibli.ajouterDocDans(etagere1, livre2);
 		maBibli.ajouterDocDans(etagere1, livre3);
 		maBibli.ajouterDocDans(etagere1, livre4);
 		
 		maBibli.ajouterDocDans(etagere2, manuel);
 		
-		
+		System.out.println("---------------------------- PAS DE TRI -----------------------------");
 		System.out.println(maBibli.toString());
 		etagere1.triEtagere();
-		System.out.println(maBibli.toString());*/
+		System.out.println("---------------------------- AVEC TRI -----------------------------");
+		System.out.println(maBibli.toString());
+		
+		//System.out.println(maBibli.rechercheAuteur("jean"));
+		
 		
 		System.out.println(livre1.imprimer());
 		System.out.println(roman1.imprimer());
+		
+		System.out.println(etagere1.imprimer());
 
 
 		
