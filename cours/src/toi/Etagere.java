@@ -33,6 +33,10 @@ public class Etagere {
 		else return false;
 	}
 	
+	public ArrayList<Document> get_listeDoc(){
+		return listeDoc;
+	}
+	
 	public void triEtagere(){
 		Collections.sort(listeDoc, new ComparateurDoc());
 	}
