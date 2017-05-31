@@ -48,17 +48,26 @@ public class Bibliotheque {
 		return false;
 	}
 	/*
-	@param parAuteur
-		Nom de l'auteur a chercher
+	Ajoute une etagere a la liste d'étagère
+	@param parEtagere
+		objet etagere a ajouter
 	 */
 	public void ajouterEtagere(Etagere parEtagere){
 		listeEtagere.add(parEtagere);
 	}
-	
+
+	/*
+	Retourne la liste d'étagère
+	@return
+		ArrayList<Etagere> liste d'étagère
+	 */
 	public ArrayList<Etagere> get_listeEtagere(){
 		return listeEtagere;
 	}
-	
+
+	/*
+	Ajoute un document dans une etagère precise
+	 */
 	public void ajouterDocDans(Etagere parEtagere, Document parDoc){
 		Iterator iterateur = listeEtagere.iterator();
 		Etagere etagereTemp;
