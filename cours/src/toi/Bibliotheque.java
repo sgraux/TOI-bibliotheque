@@ -7,21 +7,19 @@ public class Bibliotheque {
 	
 	private ArrayList<Etagere> listeEtagere;
 
-	/*
+	/**
 	Constructeur, instancie une arraylist d'Etagere
 	 */
 	public Bibliotheque(){
 		listeEtagere = new ArrayList<Etagere>();
 	}
 
-	/*
+	/**
 	Recherche dans la arraylist un document
 	@param parDoc
 		Document a chercher
 	@return true
 		Document trouvé
-	@return false
-		Document absent
 	 */
 	public boolean rechercheDoc(Document parDoc){
 		Iterator iterateur = listeEtagere.iterator();
@@ -32,7 +30,7 @@ public class Bibliotheque {
 		return false;
 	}
 
-	/*
+	/**
 	Recherche dans la arraylist si un document porte le nom d'un auteur
 	@param parAuteur
 		Nom de l'auteur a chercher
@@ -47,7 +45,7 @@ public class Bibliotheque {
 		}
 		return false;
 	}
-	/*
+	/**
 	Ajoute une etagere a la liste d'étagère
 	@param parEtagere
 		objet etagere a ajouter
@@ -56,7 +54,7 @@ public class Bibliotheque {
 		listeEtagere.add(parEtagere);
 	}
 
-	/*
+	/**
 	Retourne la liste d'étagère
 	@return
 		ArrayList<Etagere> liste d'étagère
@@ -65,7 +63,7 @@ public class Bibliotheque {
 		return listeEtagere;
 	}
 
-	/*
+	/**
 	Ajoute un document dans une etagère precise
 	@param parEtagere
 		Etagere où ajouter le document
